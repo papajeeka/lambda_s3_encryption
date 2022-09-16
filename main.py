@@ -12,8 +12,6 @@ def send_sns(HTML_EMAIL_CONTENT):
     client = boto3.client('ses',region_name='eu-west-3')
     CHARSET = "UTF-8"
     #HTML_EMAIL_CONTENT = notification
-   
-resources
 
     response = client.send_email(
         Destination={
