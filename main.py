@@ -1,3 +1,4 @@
+from importlib import resources
 import json
 import boto3
 
@@ -12,6 +13,7 @@ def send_sns(HTML_EMAIL_CONTENT):
     CHARSET = "UTF-8"
     #HTML_EMAIL_CONTENT = notification
    
+resources
 
     response = client.send_email(
         Destination={
